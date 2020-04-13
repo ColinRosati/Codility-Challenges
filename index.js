@@ -1,18 +1,47 @@
 const { solution } = require("./solution");
 
 const input = [
-	[[3, 8, 9, 7, 6], 3],
-	[[0, 0, 0], 1],
-	[[1, 2, 3, 4], 4],
-	[[], 1],
+	[9, 3, 9, 3, 9, 7, 9],
+	[2, 2, 4, 3, 7, 4, 2, 4, 3, 3, 6],
+	[
+		0,
+		1,
+		2,
+		23,
+		23,
+		44,
+		44,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		1,
+		2,
+		2,
+		2,
+		2,
+		2,
+		2,
+		4,
+		3,
+		7,
+		4,
+		2,
+		4,
+		3,
+		3,
+		19,
+	],
+	[],
+	[1, 2],
 ];
 
-// console.log(solution());
-// input.forEach((item) => solution(item));
-
-solution(input[0][0], input[0][1]);
-solution(input[1][0], input[1][1]);
-solution(input[2][0], input[2][1]);
-solution(input[3][0], input[3][1]);
-
-// return solution();
+input.forEach((item, index) => {
+	solution(input[index]);
+});
+// solution(input[0]);
+// solution(input[1]);
+// solution(input[2]);
+// solution(input[3]);
