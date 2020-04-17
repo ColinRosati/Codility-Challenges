@@ -1,0 +1,14 @@
+Solution
+Given the array with a missing value. 
+Compare an ordinary array of the same length against the given array.
+Sum both the ordinary array and given array. 
+Subract the total to find the missing value. 
+
+Learning
+Gauss formula
+n * (n + 1) / 2
+
+This formula is an efficient way to get the sum of a series of numbers.
+
+I find this solution hardly intuitive, but relys of math formulas that
+I am not familiar with.
