@@ -10,21 +10,23 @@ var solution = function solution(A) {
     return A[0];
   }
 
-  if (A.length <= 2) {
+  if (A.length === 2) {
     return Math.abs(A[0] - A[1]);
   } else {
     var diffs = A.map(function (item, index, arr) {
       var part1 = index + 1;
-      var part2 = index + 1 - A.length;
+      var part2 = part1 - A.length;
+      var part3 = index + 1;
 
       if (part1 && part2 < 0) {
         return Math.abs(A.slice(0, part1).reduce(function (acc, curr) {
           return acc + curr;
-        }) - A.slice(part1 + 1, A.length).reduce(function (acc, curr) {
+        }) - A.slice(part3, A.length).reduce(function (acc, curr) {
           return acc + curr;
         }));
       }
     }).filter(function (item, index, arr) {
+      console.log("sums", item);
       return item < arr[index + 1];
     });
     console.log("sollution", diffs[0]);
@@ -60,8 +62,7 @@ var solution = function solution(A) {
 // 	return Math.abs(p1Sum - p2Sum);
 // };
 // solution([3, 1, 1]);
-// solution([3, 1, 2, 4, 3]);
 
 
 exports.solution = solution;
-solution([3, 1]);
+solution([3, 1, 2, 4, 3]); // solution([3, 1]);

@@ -5,8 +5,8 @@
 	"main": "index.js",
 	"scripts": {
 		"build": "babel src -d build",
-		"start": "babel src/lesson-03/PermMissingElem -d build && node build/lesson-03/PermMissingElem/index.js",
-		"test": "babel src/lesson-03/PermMissingElem -d build && mocha \"build/lesson-03/PermMissingElem/*_test.js\""
+		"start": "babel src -d build && node build/lesson-03/TapeEquilibrium/solution.js",
+		"test": "babel src/lesson-03/TapeEquilibrium -d build && mocha \"build/lesson-03/TapeEquilibrium/*_test.js\""
 	},
 	"author": "",
 	"license": "ISC",
