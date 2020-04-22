@@ -9,11 +9,11 @@ describe("Binary Gap", function () {
     var results = (0, _solution.solution)(1041);
     (0, _chai.expect)(results).to.equal(5);
   });
-  xit("should return 1 if no binarygap 111", function () {
+  it("should return 1 if no binarygap 111", function () {
     var results = (0, _solution.solution)(15);
     (0, _chai.expect)(results).to.equal(0);
   });
-  xit("should return 0 if trailing 0's 10000", function () {
+  it("should return 0 if trailing 0's 10000", function () {
     var results = (0, _solution.solution)(32);
     (0, _chai.expect)(results).to.equal(0);
   });
