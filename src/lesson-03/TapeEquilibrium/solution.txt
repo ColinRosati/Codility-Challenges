@@ -1,0 +1,12 @@
+Compare sums against each others
+
+sum all items for first sumA
+sumB aggrigates items together
+
+subtract sumA and sumB
+
+push all diffs to an new array
+
+array sort lowest to highest diffs
+
+first sum is the resulting smallest diff
