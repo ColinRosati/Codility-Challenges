@@ -1,12 +1,37 @@
-Compare sums against each others
+Original Solution I had was O**N complexity - BAD
 
-sum all items for first sumA
-sumB aggrigates items together
+Origianl Solution
+		Create a new array of leafPositions from 0 -> X
 
-subtract sumA and sumB
+		loop through array. 
+			if(Array.every(matchRule))
+				matchRule = (item) => newArray.includes(item)
 
-push all diffs to an new array
+		Check if all leafs are available. 
+		This has 3 nested loops. So very slow! 
 
-array sort lowest to highest diffs
+	Final Solution with Set 0(N) complexity
 
-first sum is the resulting smallest diff
+Learnings
+		Set is an object of unique values! 
+		Wow this is great. No array iteration and 
+		if conditions to create unique arrays.
+
+		For of loop.
+		1. For of you can return early, break unlike for.each()
+		2. keep track of index by destructuring array.entries()!! WOAH SO GOOD!
+				- 	for (var [index, item] of A.entries()) {
+
+Solution
+		Keep track of the set size. 
+		Once matched return the index of the loop.
+
+		So you can atempt to add all the values to leafs set.
+		Set will check and only add unique values.
+
+		Once the size of leafPositions.size() === X,
+		Then return the index of the for loop as the solution.
+
+
+
+
