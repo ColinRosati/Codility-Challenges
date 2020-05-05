@@ -5,8 +5,8 @@
 	"main": "index.js",
 	"scripts": {
 		"build": "babel src -d build",
-		"start": "babel src -d build && node build/lesson-03/FrogJmp/solution.js",
-		"test": "babel src -d build && mocha \"build/lesson-03/FrogJmp/*_test.js\""
+		"start": "babel src -d build && node build/lesson-04/FrogRiverOne/solution.js",
+		"test": "babel src -d build && mocha \"build/lesson-04/FrogRiverOne/*_test.js\""
 	},
 	"author": "",
 	"license": "ISC",
