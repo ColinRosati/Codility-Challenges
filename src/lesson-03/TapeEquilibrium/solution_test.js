@@ -1,6 +1,6 @@
 import { expect } from "chai";
 
-import { solution } from "./tempsolution";
+import { solution } from "./solution";
 
 describe("PermMissingElem", () => {
 	it("should return 1 as the minimal difference that can be achieved between the absolute sum of two parts in [3, 1, 2, 4, 3]", () => {
