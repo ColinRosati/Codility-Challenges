@@ -21,8 +21,4 @@ describe("MaxCount", function () {
     var results = (0, _solution.solution)(4, [2, 6, 2, 1, 4, 2, 2, 3, 7, 3]);
     (0, _chai.expect)(results).to.eql([4, 4, 5, 4]);
   });
-  xit("should return correct with only one element in the two parts [5,4,3]", function () {
-    var results = (0, _solution.solution)([5, 4, 3]);
-    (0, _chai.expect)(results).to.equal(2);
-  });
 });

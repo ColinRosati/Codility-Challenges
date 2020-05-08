@@ -1,19 +1,17 @@
 export const solution = (N, A) => {
-	console.log("enter", N, A);
-	const counter = {};
-	for (let [index, item] of Object.entries(Array(N).fill(0))) {
-		counter[+index + 1] = item;
-	}
+	let counter = Array(N).fill(0);
+	let maxCount = 0;
 
-	let maxCount;
 	A.forEach((item, index) => {
-		if (counter[item] === undefined) {
-			maxCount = Object.values(counter).reduce((a, b) => (a > b ? a : b));
-			Object.keys(counter).forEach((item) => (counter[item] = maxCount));
+		if (counter[item - 1] === undefined) {
+			counter = Array(N).fill(maxCount);
 		} else {
-			counter[item]++;
+			counter[item - 1]++;
+			if (counter[item - 1] > maxCount) {
+				maxCount = counter[item - 1];
+			}
 		}
 	});
 
-	return Object.values(counter);
+	return counter;
 };
