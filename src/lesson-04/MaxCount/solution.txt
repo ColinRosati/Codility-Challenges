@@ -1,0 +1,24 @@
+Learning
+		Array(X)
+		Create an array of X length
+
+		array.prototype.fill(X)
+		Fill all items of array with x value
+
+Solution with O(M**N) complexity
+	const counter = {};
+	for (let [index, item] of Object.entries(Array(N).fill(0))) {
+		counter[+index + 1] = item;
+	}
+
+	let maxCount;
+	A.forEach((item, index) => {
+		if (counter[item] === undefined) {
+			maxCount = Object.values(counter).reduce((a, b) => (a > b ? a : b));
+			Object.keys(counter).forEach((item) => (counter[item] = maxCount));
+		} else {
+			counter[item] = counter[item] + 1;
+		}
+
+	});
+	return Object.values(counter);
