@@ -35,8 +35,6 @@ var solution = function solution(X, A) {
       leafPositions.add(item);
 
       if (item !== undefined) {
-        console.log(leafPositions, item);
-
         if (leafPositions.size === X) {
           return index;
         }
