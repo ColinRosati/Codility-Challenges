@@ -1,0 +1,47 @@
+Learnings
+
+	Reduce with initial value!!!
+
+	The documentation is difficult to read.
+	arr.reduce(callback( accumulator, currentValue[, index[, array]] )[, initialValue])
+	After the callback is the initial value of the accumulator
+
+	A.reduce(()=>{}, 1)   1 is the initial value of the accumulator
+
+	A.reduce(()=>{}, 28) 28 is the initial value of accumulator
+
+	Pre and Post operator
+	pre  ++x
+	post x--
+
+	pre with return the incremented value
+	post will return the value and the incrmented value
+
+	var i = 1;
+	alert(i++); // shows 1
+	alert(i); // shows 2
+	i = 1;
+	alert(++i); // shows 2
+	alert(i); // shows 2
+
+	Used the pre opperator in reduce returning the accumulator
+
+	return A.reduce((acc, curr) => (acc === curr ? ++acc : acc), 1);
+
+
+Solution
+
+	The best solution is to find the only cases where you want to increase 
+	the accumulated value. There are only a few cases you want to increase 
+	the acc value. This returns the smallest positive  integer (greater than 0)
+	that does not occur in A.
+
+	So base everything around 1 the smallest positive int and the only increment
+	cases : increment if 1 (or acc) is present and if positive number.
+
+	I had previous solutions where I found the floor and ceiling of array loop 
+	through finding a missing value. This solution was very literal 
+	"find the missing int" Also had to after the fact write all these if cases 
+	to catch where you dont want to increment. 
+
+	The solution then is to write these if cases as the only time to increment.

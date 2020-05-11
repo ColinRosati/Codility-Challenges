@@ -2,7 +2,7 @@ export const solution = (N, A) => {
 	let counter = Array(N).fill(0);
 	let maxCount = 0;
 
-	A.forEach((item, index) => {
+	A.forEach((item) => {
 		if (counter[item - 1] === undefined) {
 			counter = Array(N).fill(maxCount);
 		} else {
