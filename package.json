@@ -5,8 +5,8 @@
 	"main": "index.js",
 	"scripts": {
 		"build": "babel src -d build",
-		"start": "babel src -d build && node build/lesson-04/MaxCount/solution.js",
-		"test": "babel src -d build && mocha \"build/lesson-04/MaxCount/*_test.js\""
+		"start": "babel src -d build && node build/lesson-04/MissingInteger/solution.js",
+		"test": "babel src -d build && mocha \"build/lesson-04/MissingInteger/*_test.js\""
 	},
 	"author": "",
 	"license": "ISC",
