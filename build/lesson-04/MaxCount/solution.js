@@ -8,7 +8,7 @@ exports.solution = void 0;
 var solution = function solution(N, A) {
   var counter = Array(N).fill(0);
   var maxCount = 0;
-  A.forEach(function (item, index) {
+  A.forEach(function (item) {
     if (counter[item - 1] === undefined) {
       counter = Array(N).fill(maxCount);
     } else {
