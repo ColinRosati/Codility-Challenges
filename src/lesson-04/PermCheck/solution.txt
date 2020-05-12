@@ -1,0 +1,15 @@
+Solution 
+	This solution revolves around unique permutation. So using a Set is good to 
+	only push unique, and use .has(). The other fact is array always starts with 1.
+
+	So any array could be check against its array.length.
+
+	So there are two cases that you would break the function and retun 0.
+	1. if double numbers break
+	2. if array element is larger then array.length
+				- this wil break if number starts above 1
+						ex: [2]
+						ex: [2,3]
+						ex anything above 1 element containing 1
+
+					
