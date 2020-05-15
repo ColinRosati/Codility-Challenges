@@ -5,8 +5,8 @@
 	"main": "index.js",
 	"scripts": {
 		"build": "babel src -d build",
-		"start": "babel src -d build && node build/lesson-05/CountDiv/solution.js",
-		"test": "babel src -d build && mocha \"build/lesson-05/CountDiv/*_test.js\""
+		"start": "babel src -d build && node build/lesson-05/GenomicRangeQuery/solution.js",
+		"test": "babel src -d build && mocha \"build/lesson-05/GenomicRangeQuery/*_test.js\""
 	},
 	"author": "",
 	"license": "ISC",
