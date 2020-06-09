@@ -29,12 +29,4 @@ describe('GenomicRangeQuery', function () {
     var results = (0, _solution.solution)('TTCATGC', [0, 5, 0, 2, 6], [1, 1, 4, 2, 5]);
     (0, _chai.expect)(results).to.eql([4, 3, 4, 2, 2]);
   });
-  xit("small random ~300 sequence 'ACTGGATC", function () {
-    var P = Array(300).fill().map(function (item) {
-      return Math.floor(Math.random() * Math.floor(4));
-    });
-    console.log('test P', P);
-    var results = (0, _solution.solution)('ACTGGATC', 0, 11);
-    (0, _chai.expect)(results).to.equal(1);
-  });
 });
