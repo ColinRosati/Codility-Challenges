@@ -14,11 +14,8 @@ var solution = function solution(S, P, Q) {
     G: 3,
     T: 4
   };
-  console.log('enter', dna, P, Q, minImpact);
 
   for (var i = 0; i < P.length; i++) {
-    console.log('dna[P[i]] <= dna[Q[i]]', P[i], dna[P[i]], dnaKey[dna[P[i]]], Q[i], dna[Q[i]], dnaKey[dna[Q[i]]], dnaKey[dna[P[i]]] < dnaKey[dna[Q[i]]]);
-
     if (dnaKey[dna[P[i]]] < dnaKey[dna[Q[i]]]) {
       minImpact[i] = dnaKey[dna[P[i]]];
     } else {
@@ -26,7 +23,6 @@ var solution = function solution(S, P, Q) {
     }
   }
 
-  console.log('minImpact', minImpact);
   return minImpact;
 };
 

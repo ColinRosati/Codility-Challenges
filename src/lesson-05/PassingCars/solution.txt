@@ -1,0 +1,31 @@
+Solution
+	The solution comes from accumulating the Zeros on every One instance.
+
+	the totalPairs is the accumulation of zeros . Only accumulate on 1 instance
+	totalPairs += totalZero
+	[0, 1, 0, 1, 1]
+
+	1st loop
+		totatZero = 1
+		totalPairs = 0
+	
+	2nd Loop
+		totalZero = 1
+		totalPairs = 1
+
+	3rd loop
+		totalZero = 2
+		totalPairs = 1 
+	
+	4th
+		totalZero = 2
+		totalPairs = 3
+
+		5th
+		totalZero = 2
+		totalPairs = 5
+
+
+
+
+	
