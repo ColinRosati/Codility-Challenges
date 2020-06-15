@@ -1,0 +1,2 @@
+Solution
+	use a Set type to iterate through the array and add only unique elements
