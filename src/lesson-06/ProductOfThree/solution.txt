@@ -1,0 +1,6 @@
+Solution
+		I had a few gotchas with this problem. 
+			1. I didnt realize you can sort the array I thought it was maxSum of all linear combinations.
+			2. multiplying two negatives results in a positive
+
+	The solution is to sort the array. If there are more then 1 negative then you must compare if a double negative is higher maxSum
