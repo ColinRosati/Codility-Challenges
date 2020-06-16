@@ -10,7 +10,6 @@ var solution = function solution(A) {
   A.forEach(function (item) {
     return distinct.add(item);
   });
-  console.log(distinct.size);
   return distinct.size;
 };
 
